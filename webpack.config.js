@@ -26,9 +26,14 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            // title: "Webpack App",
+            title: "Homepage",
             filename: "index.html",
-            template: path.resolve(__dirname, "src/template.html")
+            template: path.resolve(__dirname, "src/html/index.html")
+        }),
+        new HtmlWebpackPlugin({
+            title: "Todo List",
+            filename: "list.html",
+            template: path.resolve(__dirname, "src/html/list.html")
         })
     ],
     devtool: "source-map",
