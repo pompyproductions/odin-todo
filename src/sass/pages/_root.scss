@@ -11,6 +11,14 @@ body {
   overflow: hidden;
 }
 
+.logo a {
+  color: var(--black);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 // header {
 //   margin: 0 1rem;
 //   padding: 1.4rem 0 1rem 0;
@@ -45,13 +53,19 @@ main {
   height: 100%;
   // padding: 0 1rem;
   display: grid;
-  place-items: center;
+  // place-items: center;
 }
 
 footer {
   background-color: var(--black);
+  color: var(--mint);
   padding: 1rem;
-  color: var(--white);
+  a {
+    color: inherit;
+  }
+  a::after {
+    content: " >";
+  }
 }
 
 // img {
